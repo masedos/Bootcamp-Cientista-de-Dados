@@ -1,4 +1,4 @@
-[![](https://https://github.com/masedos/Bootcamp-Cientista-de-Dados/blob/master/logo.png)](https://www.linkedin.com/in/masedos/)
+[![](https://github.com/masedos/Bootcamp-Cientista-de-Dados/blob/master/logo.png)](https://www.linkedin.com/in/masedos/)
 
 [![](https://img.shields.io/badge/made%20by-masedos-blue)](https://www.linkedin.com/in/masedos/)
 ![GitHub repo size](https://img.shields.io/badge/-Ci%C3%AAncia%20de%20Dados-blue)
