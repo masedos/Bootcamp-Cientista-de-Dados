@@ -22,3 +22,8 @@ Nos links abaixo de cada módulo disponibilizo materiais de trabalhos práticos 
 |`4h`     |`32h`   |`32h`    |`32h`    |`32h`    |`12h`        |   
 |Aquecimento e Regras do Jogo |Fundamentos|Coleta e obtenção de dados| Processamento de dados utilizando o ecossistema Hadoop |Técnicas para o processamento do Big Data|Desafio Final|
 |Visão geral da dinâmica do curso, conteúdos e ferramentas utilizadas.|Aplicar o pipeline da Ciência de Dados para obter Insights sobre uma porção do banco de dados.|Aplicar um crawler ou utilizar uma API para coleta de dados históricos ou em streaming.|Aplicar no sistema de análise de dados o processamento utilizando o ecossistema Hadoop.|Aplicar algoritmos de Machine Learning para realizar a classificação, clusterização e regressão na base de dados.|Conclusão da aplicação final.|
+
+## Trilha do bootcamp
+
+[![](https://github.com/masedos/Bootcamp-Cientista-de-Dados/blob/master/Trilha%20Cientista%20de%20Dados.png)](https://www.linkedin.com/in/masedos/)
+
