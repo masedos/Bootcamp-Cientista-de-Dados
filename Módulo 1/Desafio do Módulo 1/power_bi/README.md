@@ -1,4 +1,4 @@
 # Video resolvendo as questões de Power BI
-Perguntas de 1 a 2
+Perguntas de 1 a 7
 
-https://youtu.be/hqD5-rbCTYg
+https://www.youtube.com/watch?v=kV7MzJ1aHWw
