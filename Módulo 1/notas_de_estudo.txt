@@ -3,5 +3,92 @@ Fundamentos - Bootcamp Cientista de Dados
 Coloco aqui as minhas observações que achei importante sobre a leitura da apostila de fundamentos de ciência de dados.
 
 Big Data
-"São os ativos de informação de alto volume, alta velocidade e/ou alta variedade que demandam formas de processamento de informação 
-inovadoras e efetivas em custo que permitem insights avançados, tomada de decisão e automação de processos." - Grupo Gartner
+São os ativos de informação de alto volume, alta velocidade e/ou alta variedade que demandam formas de processamento de informação 
+inovadoras e efetivas em custo que permitem insights avançados, tomada de decisão e automação de processos. - Grupo Gartner
+
+Machine Learning
+Machine Learning é um campo de estudo que dá aos computadores a habilidade de aprender sem terem sido programados para tal. 
+Um programa de computador é dito para aprender com a experiência E com a relação a alguma classe de tarefas T e medida de desempenho P, 
+se o seu desempenho em tarefas em T, medida pelo P, melhora com a experiência E.
+São várias as tarefas que podem ser realizadas através de Machine Learning. Para exemplificar:
+- Tomada de decisão
+- Regressão
+- Clustering (ou agrupamento)
+
+Tipos de Aprendizagem em Machine Learning
+- Aprendizagem supervisionada
+- Aprendizagem não-supervisionada
+- Aprendizagem por reforço
+
+
+Overfitting
+Um cenário de overfitting ocorre quando, nos dados de treino, o modelo tem um desempenho excelente, porém quando utilizamos os dados de teste o resultado é ruim. Podemos entender que, neste caso, o modelo aprendeu tão bem as relações existentes no treino, que acabou apenas decorando o que deveria ser feito, e ao receber as informações das variáveis preditoras nos dados de teste, o modelo tenta aplicar as mesmas regras decoradas, porém com dados diferentes esta regra não tem validade, e o desempenho é afetado. É comum ouvirmos que neste cenário o modelo treinado não tem capacidade de generalização.(didatica.tech/underfitting-e-overfitting).
+
+Underfitting
+Neste cenário o desempenho do modelo já é ruim no próprio treinamento. O modelo não consegue encontrar relações entre as variáveis e o teste nem precisa acontecer. Este modelo já pode ser descartado, pois não terá utilidade.(didatica.tech/underfitting-e-overfitting)
+
+
+Deep Learning, ou aprendizagem profunda
+é uma subcategoria do aprendizado de máquina que se baseia em Redes Neurais Artificiais (RNA) para realizar o treinamento.
+
+Data Analytics
+Data Analytics, ou Análise de Dados é o processo que torna possível a transformação de dados e informações em conhecimento para um propósito específico.
+
+Data Science
+É um conceito amplo que abrange todas as tarefas relacionadas à limpeza, preparação e análise de dados, além das técnicas utilizadas a 
+fim de se extrair dados e obter insights através de informações. Ou seja, se refere ao estudo de dados e informações características de 
+um determinado assunto. Envolve diversas áreas de conhecimento como Matemática, Estatística, Computação além da compreensão do assunto 
+específico da análise em questão.
+
+Business Intelligence
+Business Intelligence, ou Inteligência de Negócio em português, é saber aplicar as estratégias de análise de dados ao negócio da empresa, melhorando o planejamento estratégico, previsões de mercado, orçamento, etc. É a habilidade de transformar os dados em informação, e a informação em conhecimento, de forma que se possa otimizar o processo de tomada de decisões nos negócios.
+
+ETL (Extract, Transform and Load)
+ETL é o processo que tem como objetivo trabalhar com toda a parte de extração de dados de fontes externas, a transformação de acordo com as 
+necessidades dos negócios e a carga para Data Warehouse e/ou Data Mart.
+
+Data Warehouse
+Base de dados que seja capaz de armazenar, estruturar e processar consultas de forma eficiente para alcançar os resultados.
+
+Data Mart
+refere-se a cada uma das partes de um Data Warehouse corporativo.
+
+Data Lake
+Data Lake preza por um único repositório, com os dados brutos e que estejam disponíveis para qualquer pessoa que precise realizar uma análise.
+
+Tipos de análises
+ - Descritiva
+ - Diagnóstica
+ - Preditiva
+ - Prescritiva
+ 
+Data Storytelling
+É a arte de contar história. É preciso explicar o que fez, como fez e por quê fez, sem deixar de lado todos os recursos disponíveis de 
+visualização para que a atenção seja direcionada e o leitor seja envolvido no resultado.
+
+Apache Kafka
+É uma plataforma distribuída de mensagens e streaming.
+Para o desenvolvimento de aplicações com o Apache Kafka, são disponibilizadas quatro principais API’s:
+- Producer API
+- Consumer API
+- Streams API
+- Connector API
+
+Apache Hadoop
+É um framework para desenvolvimento de aplicações que necessitam de armazenamento e processamento distribuído de grandes conjuntos de dados.
+
+Apache Spark
+O Apache Spark é um projeto open source de um framework que estende o modelo de programação Map Reduce popularizado pelo Apache Hadoop. 
+Sua principal vantagem, que traz muita competitividade é que o processamento é realizado em memória. Seu principal objetivo é ser veloz, 
+tanto no processamento de queries quanto de algoritmos. É atualmente uma das ferramentas com maior potencial em Data Science e vem ganhando muita popularidade.
+
+O próprio Spark possui ainda alguns recursos extras para auxiliar no desenvolvimento de aplicações que são:
+- Spark Streamming: para processamento em tempo real; 
+- GraphX: ferramenta com algoritmos e técnicas para processamento sobre grafos; 
+- SparkSQL: permite que sejam utilizadas consultas SQL sobre os dados no Spark; 
+- MLlib: biblioteca com diversos algoritmos de aprendizado de máquina (Machine Learning)
+
+
+
+
+
