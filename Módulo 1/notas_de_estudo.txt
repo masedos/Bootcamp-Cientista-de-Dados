@@ -1,0 +1,7 @@
+Fundamentos - Bootcamp Cientista de Dados
+
+Coloco aqui as minhas observações que achei importante sobre a leitura da apostila de fundamentos de ciência de dados.
+
+Big Data
+"São os ativos de informação de alto volume, alta velocidade e/ou alta variedade que demandam formas de processamento de informação 
+inovadoras e efetivas em custo que permitem insights avançados, tomada de decisão e automação de processos." - Grupo Gartner
