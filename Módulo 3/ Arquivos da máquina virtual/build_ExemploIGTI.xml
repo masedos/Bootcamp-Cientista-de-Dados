@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="pegasus" default="run" basedir="." >
+<description>
+ExemploIGTI
+</description>
+
+
+<property name="basedir" location="." />
+<property name="src.dir" location="src" />
+<property name="build.dir" location="${basedir}/classes"/>
+<property name="hadoop.version" value="3.0.3"/>
+<property name="hadoop.dir" value="/usr/local/hadoop"/>
+<property name="app.jar" location="${basedir}/ExemploIGTI.jar"/>
+
+
+<!-- classpath definitions -->
+<path id="build.classpath">
+<pathelement location="${build.dir}"/>
+<pathelement location="${hadoop.dir}/hadoop-core-${hadoop.version}.jar"/>
+</path>
+
+<target name="compile" description="compile all Java classes">
+<mkdir dir="${build.dir}"/>
+<javac classpathref="build.classpath" destdir="${build.dir}" debug="on" deprecation="off">
+<src path="${src.dir}"/>
+</javac>
+</target>
+
+<target name="makejar" description="wrap the application class in a JAR file"   depends="compile">
+<jar destfile="${app.jar}" basedir="${build.dir}" includes="IGTI/**"/>
+</target>
+
+</project>
