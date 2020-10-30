@@ -86,7 +86,7 @@ O próprio Spark possui ainda alguns recursos extras para auxiliar no desenvolvi
 - Spark Streamming: para processamento em tempo real; 
 - GraphX: ferramenta com algoritmos e técnicas para processamento sobre grafos; 
 - SparkSQL: permite que sejam utilizadas consultas SQL sobre os dados no Spark; 
-- MLlib: biblioteca com diversos algoritmos de aprendizado de máquina (Machine Learning)
+- MLlib: biblioteca com diversos algoritmos de aprendizado de máquina (Machine Learning).
 
 
 
