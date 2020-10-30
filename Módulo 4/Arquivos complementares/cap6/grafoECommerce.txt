@@ -1,0 +1,101 @@
+CREATE (smartphones:CATEGORIA {name: 'Smartphones'}),
+ 
+(notebooks:CATEGORIA {name: 'Notebooks'}), 
+
+(cameras:CATEGORIA {name: 'Cameras'})
+
+
+
+// Smartphones
+
+CREATE (sony_xperia_z22:PRODUTO {name: 'Sony Experia Z22', preco: 765.00, pronta_entrega: true, disponibilidade: true})
+
+CREATE (samsung_galaxy_s8:PRODUTO {name: 'Samsung Galaxy S8', preco: 784.00, pronta_entrega: true, disponibilidade: true})
+
+CREATE (sony_xperia_xa1:PRODUTO {name: 'Sony Xperia XA1 Dual G3112', preco: 229.50, pronta_entrega: true, disponibilidade: false})
+
+CREATE (iphone_8:PRODUTO {name: 'Apple iPhone 8 Plus 64GB', preco: 874.20, pronta_entrega: true, disponibilidade: false})
+
+CREATE (xiaomi_mi_mix_2:PRODUTO {name: 'Xiaomi Mi Mix 2', preco: 420.87, pronta_entrega: true, disponibilidade: true})
+
+CREATE (huawei_p8:PRODUTO {name: 'Huawei P8 Lite', preco: 191.00, pronta_entrega: true, disponibilidade: true})
+
+
+MATCH (p:PRODUTO{name:'Sony Experia Z22'}),(c:CATEGORIA{name:'Smartphones'}) CREATE (p)-[:PERTENCE_A]->(c) RETURN p
+MATCH (p:PRODUTO{name:'Samsung Galaxy S8'}),(c:CATEGORIA{name:'Smartphones'}) CREATE (p)-[:PERTENCE_A]->(c) 
+MATCH (p:PRODUTO{name:'Sony Xperia XA1 Dual G3112'}),(c:CATEGORIA{name:'Smartphones'}) CREATE (p)-[:PERTENCE_A]->(c) 
+MATCH (p:PRODUTO{name:'Apple iPhone 8 Plus 64GB'}),(c:CATEGORIA{name:'Smartphones'}) CREATE (p)-[:PERTENCE_A]->(c) 
+MATCH (p:PRODUTO{name:'Xiaomi Mi Mix 2'}),(c:CATEGORIA{name:'Smartphones'}) CREATE (p)-[:PERTENCE_A]->(c)
+MATCH (p:PRODUTO{name:'Huawei P8 Lite'}),(c:CATEGORIA{name:'Smartphones'}) CREATE (p)-[:PERTENCE_A]->(c)
+
+
+
+
+// Notebooks
+
+CREATE (acer_swift_3:PRODUTO {name: 'Acer Swift 3 SF314-51-34TX', preco: 595.00, pronta_entrega: true, disponibilidade: false})
+
+CREATE (hp_pro_book:PRODUTO {name: 'HP ProBook 440 G4', preco: 771.30, pronta_entrega: true, disponibilidade: true})
+
+CREATE (dell_inspiron_15:PRODUTO {name: 'Dell Inspiron 15 7577', preco: 1477.50, pronta_entrega: true, disponibilidade: true})
+
+CREATE (apple_macbook:PRODUTO {name: "Apple MacBook A1534 12' Rose Gold", preco: 1293.00, pronta_entrega: false, disponibilidade: true})
+
+MATCH (p:PRODUTO{name:'Acer Swift 3 SF314-51-34TX'}),(c:CATEGORIA{name:'Notebooks'}) CREATE (p)-[:PERTENCE_A]->(c) RETURN p
+MATCH (p:PRODUTO{name:'HP ProBook 440 G4'}),(c:CATEGORIA{name:'Notebooks'}) CREATE (p)-[:PERTENCE_A]->(c) 
+MATCH (p:PRODUTO{name:'Dell Inspiron 15 7577'}),(c:CATEGORIA{name:'Notebooks'}) CREATE (p)-[:PERTENCE_A]->(c) 
+MATCH (p:PRODUTO{name:"Apple MacBook A1534 12' Rose Gold"}),(c:CATEGORIA{name:'Notebooks'}) CREATE (p)-[:PERTENCE_A]->(c) 
+
+
+
+
+// Cameras
+
+CREATE (canon_eos_6d:PRODUTO {name: 'Canon EOS 6D Mark II Body', preco: 1794.00, pronta_entrega: true, disponibilidade: false})
+
+CREATE (nikon_d7500:PRODUTO {name: 'Nikon D7500 Kit 18-105mm VR', preco: 1612.35, pronta_entrega: true, disponibilidade: true})
+
+MATCH (p:PRODUTO{name:'Canon EOS 6D Mark II Body'}),(c:CATEGORIA{name:'Cameras'}) CREATE (p)-[:PERTENCE_A]->(c) RETURN p
+MATCH (p:PRODUTO{name:'Nikon D7500 Kit 18-105mm VR'}),(c:CATEGORIA{name:'Cameras'}) CREATE (p)-[:PERTENCE_A]->(c); 
+
+
+
+
+
+
+
+// CONSUMIDORes
+
+CREATE (joe:CONSUMIDOR {name: 'Joe Baxton', email: 'joeee_baxton@example.com', idade: 25})
+
+CREATE (daniel:CONSUMIDOR {name: 'Daniel Johnston', email: 'dan_j@example.com', idade: 31})
+
+CREATE (alex:CONSUMIDOR {name: 'Alex McGyver', email: 'mcgalex@example.com', idade: 22})
+
+CREATE (alisson:CONSUMIDOR {name: 'Allison York', email: 'ally_york1@example.com', idade: 24})
+
+MATCH (c:CONSUMIDOR{email:'joeee_baxton@example.com'}),(p:PRODUTO{name:'Nikon D7500 Kit 18-105mm VR'}) CREATE (c)-[:VIEWED {views_count: 15}]->(p)
+MATCH (c:CONSUMIDOR{email:'joeee_baxton@example.com'}),(p:PRODUTO{name:'Apple iPhone 8 Plus 64GB'}) CREATE (c)-[:ADDED_TO_WISH_LIST]->(p)
+MATCH (c:CONSUMIDOR{email:'joeee_baxton@example.com'}),(p:PRODUTO{name:"Apple MacBook A1534 12' Rose Gold"}) CREATE (c)-[:COMPROU]->(p)
+
+
+
+
+MATCH (c:CONSUMIDOR{email:'dan_j@example.com'}),(p:PRODUTO{name:'Sony Experia Z22'}) CREATE (c)-[:VIEWED {views_count: 10}]->(p)
+MATCH (c:CONSUMIDOR{email:'dan_j@example.com'}),(p:PRODUTO{name:'Dell Inspiron 15 7577'}) CREATE (c)-[:VIEWED {views_count: 20}]->(p)
+MATCH (c:CONSUMIDOR{email:'dan_j@example.com'}),(p:PRODUTO{name:'Dell Inspiron 15 7577'}) CREATE (c)-[:ADDED_TO_WISH_LIST]->(p)
+
+
+
+MATCH (c:CONSUMIDOR{email:'mcgalex@example.com'}),(p:PRODUTO{name:'Canon EOS 6D Mark II Body'}) CREATE (c)-[:VIEWED {views_count: 20}]->(p)
+MATCH (c:CONSUMIDOR{email:'mcgalex@example.com'}),(p:PRODUTO{name:'Sony Xperia XA1 Dual G3112'}) CREATE (c)-[:ADDED_TO_WISH_LIST]->(p)
+MATCH (c:CONSUMIDOR{email:'mcgalex@example.com'}),(p:PRODUTO{name:'Nikon D7500 Kit 18-105mm VR'}) CREATE (c)-[:ADDED_TO_WISH_LIST]->(p)
+MATCH (c:CONSUMIDOR{email:'mcgalex@example.com'}),(p:PRODUTO{name:'Xiaomi Mi Mix 2'}) CREATE (c)-[:COMPROU]->(p)
+
+
+
+
+MATCH (c:CONSUMIDOR{email:'ally_york1@example.com'}),(p:PRODUTO{name:'Acer Swift 3 SF314-51-34TX'}) CREATE (c)-[:ADDED_TO_WISH_LIST]->(p)
+MATCH (c:CONSUMIDOR{email:'ally_york1@example.com'}),(p:PRODUTO{name:'HP ProBook 440 G4'}) CREATE (c)-[:ADDED_TO_WISH_LIST]->(p)
+MATCH (c:CONSUMIDOR{email:'ally_york1@example.com'}),(p:PRODUTO{name:'Huawei P8 Lite'}) CREATE (c)-[:COMPROU]->(p)
+MATCH (c:CONSUMIDOR{email:'ally_york1@example.com'}),(p:PRODUTO{name:'Sony Xperia XA1 Dual G3112'}) CREATE (c)-[:COMPROU]->(p);
