@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/made%20by-masedos-blue)](https://www.linkedin.com/in/masedos/)
 ![GitHub repo size](https://img.shields.io/badge/-Ci%C3%AAncia%20de%20Dados-blue)
 
-`Certificado:` [Curso em andamento](https://www.igti.com.br/custom/bootcamp-cientista-de-dados/)
+`Certificado:` [Acesse aqui](https://github.com/masedos/Bootcamp-Cientista-de-Dados/blob/master/Fernandes%20Macedo%20RibeiroBootcamp%20Cientista%20de%20Dados.pdf)
 </br></br>
 `Duração:` 2 meses, 148 horas
 </br></br>
